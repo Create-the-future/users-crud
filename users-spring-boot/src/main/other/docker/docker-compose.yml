@@ -1,0 +1,9 @@
+version: "3"
+services:
+  shiro-study:
+    image: users-spring:1.0 # 生成的镜像的名称 和 tag
+    build: . # 一键构建镜像  =================  以上为构建命令，以下为运行命令
+    container_name: users-spring_v1 # 运行后的容器的名称
+    ports:
+      - "8086:5088"
+    restart: always # 总是重启
